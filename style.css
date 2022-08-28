@@ -1,0 +1,72 @@
+:root {
+    --cinza: #d3d6da;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-global {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.container-game {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+}
+
+.container-rows > div{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.container-rows div > div {
+    font-size: 32px;
+    width: 62px;
+    height: 62px;
+    border: 2px solid var(--cinza);
+    font-weight: bold;
+    margin: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-keyboard button {
+    background-color: var(--cinza);
+    width: 43px;
+    height: 58px;
+    border: none;
+    border-radius: 4px;
+    margin: 4px 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-keyboard button:nth-child(11) {
+    margin-left: 1.5rem;
+}
+
+.container-keyboard button:nth-child(20), .container-keyboard button:nth-child(28) {
+    width: 65px;
+}
